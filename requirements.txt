@@ -1,0 +1,8 @@
+# Runtime dependency — packaged into the Lambda deployment ZIP.
+# psycopg2-binary includes the PostgreSQL client library statically linked,
+# so no system-level libpq installation is required in the Lambda environment.
+psycopg2-binary==2.9.9
+
+# Test / development dependencies (not included in the Lambda ZIP).
+pytest==8.2.2
+pytest-mock==3.14.0
